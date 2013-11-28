@@ -7,7 +7,9 @@ page_title: Jobs
 %p Nous recherchons actuellement les profils suivants :
 %ul
   - data.jobs.each do |job|
-    %li= link_to job.title, job.url
+    %li.job
+      = link_to job.title, job.url
+      %em= "(#{job.location})"
 
 %p
   %em Altagem
