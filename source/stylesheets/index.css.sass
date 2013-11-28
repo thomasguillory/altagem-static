@@ -1,0 +1,49 @@
+@charset "utf-8"
+
+.index
+  text-align: center
+
+  header
+    .main-menu
+      position: absolute
+      top: 0
+      width: 100%
+
+      ul
+        margin: 0
+        padding: 0.5em 0 0 0
+        list-style-type: none
+
+        li
+          display: inline-block
+          margin: 0 1em
+  .screenheight
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+
+  .welcome
+    display: inline-block
+    vertical-align: middle
+    margin-top: -100px
+
+  h1
+    $ratio: 0.5
+    display: block
+    width:  $ratio * 1402px
+    height: $ratio * 635px
+    margin: 0 auto
+    background: url("../images/altagem.png") no-repeat left top
+    background-size: contain
+    text-indent: -999em
+
+  .catching
+    font-size: 1.5em
+    text-shadow: rgba(0,0,0,0.25) 1px 2px
+
+    &:before, &:after
+      opacity: .2
+      padding: 6px
+      font-style: normal
+      position: relative
+      content: "•"
