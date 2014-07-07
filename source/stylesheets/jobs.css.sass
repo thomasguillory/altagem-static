@@ -1,10 +1,33 @@
 @charset "utf-8"
 
 .jobs
-  h2
-    font-size: 1.2em
+  .title
+    text-align: center
+    margin-bottom: 2em
 
-  li.job
-    em
-      font-weight: normal
-      font-size: 0.9125em
+  .apply
+    text-align: center
+
+    a
+      display: inline-block
+      padding: 0.75em 1em
+      background: #8dc63f
+      color: #282828
+      font-weight: 700
+      text-decoration: none
+      font-size: 1.5em
+      border-radius: 0.125em
+      background-clip: padding-box
+      -webkit-box-shadow: 0.25em 0.25em 0px 0px rgba(40,40,40,0.75)
+      box-shadow: 0.25em 0.25em 0px 0px rgba(40,40,40,0.75)
+
+      &:hover, &:focus
+        text-decoration: underline
+      &:active
+        -webkit-box-shadow: none
+        box-shadow: none
+        position: relative
+        top: 0.25em
+        left: 0.25em
+
+

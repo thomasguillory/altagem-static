@@ -1,0 +1,12 @@
+= wrap_layout :layout do
+
+  %header.main
+    =link_to (image_tag 'altagem.jpg', alt: 'Altagem').html_safe, '/', class: :logo
+    .catching
+      Solution Saas et mobile de Field Service Management
+      %br/
+      Gestion d'Equipes Mobiles
+
+  .page
+    .content
+      =yield

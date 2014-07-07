@@ -8,13 +8,28 @@ html, body
   height: 100%
 
 body
-  background: #d4d4d4 url("../images/background.png")
+  background: #fff
   font-family: 'Quicksand', sans-serif
-  padding: 0.5em 1em
+  color: #282828
 
 h1, h2, h3, h4
+  margin-top: 2em
   font-family: 'Muli', sans-serif
+
+h1
+  font-size: 1.6em
+
+h2
+  font-size: 1.2em
+  &:first-letter
+    color: #8dc63f
+
+h3
+  font-size: 1em
 
 em
   font-weight: bold
   font-style: normal
+  display: inline-block
+  &.altagem:first-letter
+    color: #8dc63f
